@@ -14,23 +14,30 @@ body, html, * {
 .card{
     height: 40rem;
     width: 26%;
-    border: 2px black;
-    border-radius: 3px;
+    border: 4px solid black;
+    border-radius: 1cm;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3rem 0;
+    margin: 2vw;
 }
 .card-img{
-    width: 100%;
+    width: 30%;
     height: 45%;
     object-fit: cover;
-    background-image: linear-gradient(), url();
+    background-image: url(images/freakbob.jpg);
+    display: block;
 }
 .card-header{
-    margin-top: 1.2rem;
+    margin-top: 1vw;
+    font-size:4vw;
+    object-fit: cover;
+    text-align: center;
 }
 .price{
-    margin-top: 1.2rem;
+    margin-top: 1vw;
+    font-size: 3vw;
+    object-fit: cover;
+    text-align: center;
 }
