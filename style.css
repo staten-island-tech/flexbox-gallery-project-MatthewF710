@@ -4,8 +4,23 @@ body, html, * {
     margin: 0;
     padding: 0:
 }
+/* a,
+a:link,
+a:visited,
+a:focus {
+    color: antiquewhite;
+    text-decoration: none;
+}
+button{
+    transition: all .3s;
+}
+button:hover{
+    transform: scale(1.2) skew(30deg) translateY(.5vw);
+    filter: blur(1px);
+    background-color: red;
+} */
 .container{
-    width: 90vw;
+    width: 150rem;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -32,12 +47,10 @@ body, html, * {
 .card-header{
     margin-top: 1vw;
     font-size:4vw;
-    object-fit: cover;
     text-align: center;
 }
 .price{
     margin-top: 1vw;
     font-size: 3vw;
-    object-fit: cover;
     text-align: center;
 }
