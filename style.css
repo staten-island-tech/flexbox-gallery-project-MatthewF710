@@ -17,7 +17,7 @@ button{
     transition: all .3s;
 }
 button:hover{
-    transform: scale(1.2) skew(30deg) translateY(.5vw);
+    transform: scale(1.2) skew(30deg) 4
     filter: blur(1px);
     background-color: red;
 } */
@@ -33,7 +33,7 @@ button:hover{
     padding: 1rem;
 }
 .card{
-    height: 40rem;
+    height: 37rem;
     width: 25%;
     min-width: 25rem;
     min-height: 30rem;
@@ -63,27 +63,24 @@ button:hover{
     font-size: 3vw;
     text-align: center;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1155) and (min-width: 701px) {
     .container {
         width: 100%
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .card {
-        width: 43%;
-        height: 50rem;
-    }
-}
-@media (max-width: 794px) and (min-width: 701px) {
-    .container {
-        width: 100%
-    }
-    .card {
-        width: 80%;
+        width: 45%;
         height: 30rem;
     }
 }
-@media (max-width: 700px) and (min-width: 600px) {
+@media (max-width: 706px){
     .container {
         width: 100%
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .card {
         width: 80%;
