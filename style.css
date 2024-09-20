@@ -28,7 +28,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     grid-row-gap: 2vw;
     padding: 1rem;
 }
@@ -49,9 +49,8 @@ button:hover{
     margin: 2vw;
 }
 .card-img{
-    width: 35%;
+    height: 150px;
     object-fit: cover;
-    background-image: url(images/freakbob.jpg);
     display: block;
     margin: 0 auto;
 }
@@ -59,16 +58,17 @@ button:hover{
     font-size:4vw;
     text-align: center;
 }
-.price{
+.info{
     font-size: 3vw;
     text-align: center;
+}
+#Spongebob {
+    background-color: yellow;
 }
 @media (max-width: 1155) and (min-width: 701px) {
     .container {
         width: 100%
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     .card {
         width: 45%;
@@ -78,15 +78,9 @@ button:hover{
 @media (max-width: 706px){
     .container {
         width: 100%
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
     .card {
         width: 80%;
         height: 30rem;
-    }
-    .card-img {
-        width: 30%;
     }
 }
