@@ -9,21 +9,21 @@ body, html, * {
 html {
     background-image: url(images/spongebob_background.png);
 }
-/* a,
+a,
 a:link,
 a:visited,
 a:focus {
     color: antiquewhite;
     text-decoration: none;
 }
-button{
+#spongebob{
     transition: all .3s;
 }
-button:hover{
-    transform: scale(1.2) skew(30deg) 4
+#spongebob:hover{
+    transform: scale(1.2) skew(30deg);
     filter: blur(1px);
     background-color: red;
-} */
+} 
 h1 {
     color: rgb(168, 165, 125);
     font-size: 7rem;
@@ -44,7 +44,7 @@ h1 {
 }
 .card{
     height: 37rem;
-    width: 25%;
+    width: 17%;
     margin-top: 2%;
     padding: 1vw;
     border: 7px solid black;
@@ -56,6 +56,7 @@ h1 {
     justify-content: space-evenly;
     margin: 2vw;
     box-shadow: 10px 10px 5px rgb(41, 62, 65);
+    word-wrap: break-word;
 }
 .card-img{
     height: 150px;
@@ -64,7 +65,7 @@ h1 {
     margin: 0 auto;
 }
 .card-header{
-    font-size: 2.5vw;
+    font-size: 200%;
     text-align: center;
     font-family: 'SpongeBob Font Wide', sans-serif;
 }
@@ -95,12 +96,12 @@ h1 {
     background-color: rgb(136, 136, 136)
 }
 #Larry {
-    background-color: rgb(255,243,96)
+    background-color: rgb(109, 155, 194)
 }
 #Gary {
     background-color: rgb(198, 126, 191)
 }
-@media (max-width: 1290) and (min-width: 724px) {
+@media (max-width: 1290px) {
     h1 {
         font-size: 5rem;
     }
@@ -109,7 +110,7 @@ h1 {
         justify-content: center;
     }
     .card {
-        width: 60%;
+        width: 40%;
         height: 30rem;
     }
     .card-header {
@@ -126,5 +127,27 @@ h1 {
     }
     .card-header {
         font-size: 4vw;
+    }
+}
+@keyframes spongebob {
+    0%{
+        left: 50%;
+        bottom: 10%;
+        background-color: rgb(88, 152, 208);
+    }
+    25%{
+        left: 50%;
+        bottom: 10%;
+        background-color: rgb(227, 60, 60);
+    }
+    50%{
+        left: 50%;
+        bottom: 10%;
+        background-color: rgb(42, 165, 104);
+    }
+    75%{
+        left: 50%;
+        bottom: 10%;
+        background-color: rgb(165, 42, 124);
     }
 }
