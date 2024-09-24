@@ -9,21 +9,70 @@ body, html, * {
 html {
     background-image: url(images/spongebob_background.png);
 }
-a,
-a:link,
-a:visited,
-a:focus {
-    color: antiquewhite;
-    text-decoration: none;
-}
-#spongebob{
+#spngIMG{
     transition: all .3s;
 }
-#spongebob:hover{
-    transform: scale(1.2) skew(30deg);
-    filter: blur(1px);
-    background-color: red;
+#ptrkIMG{
+    transition: all 3s;
+}
+#spngIMG:hover{
+    animation: spngIMG 1.75s infinite;
 } 
+#ptrkIMG:hover{
+    transform: rotate(3600deg);
+}
+#garyIMG:hover{
+    animation: garyIMG 1.75s infinite;
+}
+@keyframes spngIMG {
+    0%{
+        transform: scale(1);
+    }
+    12.5%{
+        transform: scale(1.25, 0.5);
+    }
+    25%{
+        transform: scale(1.25);
+    }
+    37.5%{
+        transform: scale(1.25, 0.5);
+    }
+    50%{
+        transform: scale(1.25);
+    }
+    62.5%{
+        transform: scale(1.25, 0.5);
+    }
+    75%{
+        transform: scale(1.25);
+    }
+    87.5%{
+        transform: scale(1.25, 0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes garyIMG {
+    0%{
+        transform: rotate3d(1, 2, 3, 20deg);
+    }
+    25%{
+        transform: scale(2) rotate3d(1, 2, 3, -20deg);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    50%{
+        transform: rotate3d(1, 2, 3, 20deg);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    75%{
+        transform: scale(2) rotate3d(1, 2, 3, -20deg);
+        background-color: rgb(88, 152, 208);
+    }
+    100%{
+        transform: rotate3d(1, 2, 3, 20deg);
+    }
+}
 h1 {
     color: rgb(168, 165, 125);
     font-size: 7rem;
@@ -33,7 +82,6 @@ h1 {
 }
 .container{
     width: 85vw;
-    height: 85vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +123,7 @@ h1 {
     font-family: 'SpongeBob Font Wide', sans-serif;
 }
 #Spongebob {
-    background-color: rgb(255,243,96)
+        background: linear-gradient(45deg,rgb(207, 252, 151), rgb(255, 243, 96));
 }
 #Patrick {
     background-color: rgb(249, 167, 248)
@@ -127,27 +175,5 @@ h1 {
     }
     .card-header {
         font-size: 4vw;
-    }
-}
-@keyframes spongebob {
-    0%{
-        left: 50%;
-        bottom: 10%;
-        background-color: rgb(88, 152, 208);
-    }
-    25%{
-        left: 50%;
-        bottom: 10%;
-        background-color: rgb(227, 60, 60);
-    }
-    50%{
-        left: 50%;
-        bottom: 10%;
-        background-color: rgb(42, 165, 104);
-    }
-    75%{
-        left: 50%;
-        bottom: 10%;
-        background-color: rgb(165, 42, 124);
     }
 }
