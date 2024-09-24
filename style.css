@@ -56,6 +56,7 @@ html {
 @keyframes garyIMG {
     0%{
         transform: rotate3d(1, 2, 3, 20deg);
+        background-color: rgb(88, 152, 208);
     }
     25%{
         transform: scale(2) rotate3d(1, 2, 3, -20deg);
