@@ -1,16 +1,14 @@
 body, html, * {
-    font-size: 10;
-    margin: 0;
-    padding: 0:
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    font-family: 'SpongeBob Font Wide', sans-serif;
 }
 html {
     background-image: url(images/spongebob_background.png);
-}
-#spngIMG{
-    transition: all .3s;
 }
 #ptrkIMG{
     transition: all 3s;
@@ -19,66 +17,40 @@ html {
     animation: spngIMG 1.75s infinite;
 } 
 #ptrkIMG:hover{
-    transform: rotate(3600deg);
+    transform: rotate(10turn);
 }
 #garyIMG:hover{
     animation: garyIMG 1.75s infinite;
 }
 @keyframes spngIMG {
-    0%{
+    0%, 100%{
         transform: scale(1);
     }
-    12.5%{
+    12.5%, 37.5%, 62.5%, 87.5%{
         transform: scale(1.25, 0.5);
     }
-    25%{
+    25%, 50%, 75%{
         transform: scale(1.25);
-    }
-    37.5%{
-        transform: scale(1.25, 0.5);
-    }
-    50%{
-        transform: scale(1.25);
-    }
-    62.5%{
-        transform: scale(1.25, 0.5);
-    }
-    75%{
-        transform: scale(1.25);
-    }
-    87.5%{
-        transform: scale(1.25, 0.5);
-    }
-    100%{
-        transform: scale(1);
     }
 }
 @keyframes garyIMG {
-    0%{
-        transform: rotate3d(1, 2, 3, 20deg);
+    0%, 75%{
         background-color: rgb(88, 152, 208);
     }
-    25%{
-        transform: scale(2) rotate3d(1, 2, 3, -20deg);
+    0%, 50%, 100%{
+        transform: rotate3d(1, 2, 3, 20deg);
+    }
+    25%, 50%{
         background-color: rgba(255, 255, 255, 0);
     }
-    50%{
-        transform: rotate3d(1, 2, 3, 20deg);
-        background-color: rgba(255, 255, 255, 0);
-    }
-    75%{
+    25%, 75%{
         transform: scale(2) rotate3d(1, 2, 3, -20deg);
-        background-color: rgb(88, 152, 208);
-    }
-    100%{
-        transform: rotate3d(1, 2, 3, 20deg);
     }
 }
 h1 {
     color: rgb(168, 165, 125);
     font-size: 7rem;
     text-align: center;
-    font-family: 'SpongeBob Font Wide', sans-serif;
     text-shadow: 5px 5px 2.5px rgb(0, 0, 0);
 }
 .container{
@@ -105,7 +77,6 @@ h1 {
     justify-content: space-evenly;
     margin: 2vw;
     box-shadow: 10px 10px 5px rgb(41, 62, 65);
-    word-wrap: break-word;
 }
 .card-img{
     height: 150px;
@@ -116,46 +87,43 @@ h1 {
 .card-header{
     font-size: 200%;
     text-align: center;
-    font-family: 'SpongeBob Font Wide', sans-serif;
 }
 .info{
-    font-size: auto;
     text-align: center;
-    font-family: 'SpongeBob Font Wide', sans-serif;
 }
 #Spongebob {
         background: linear-gradient(45deg,rgb(207, 252, 151), rgb(255, 243, 96));
 }
 #Patrick {
-    background-color: rgb(249, 167, 248)
+    background-color: rgb(249, 167, 248);
 }
 #Squidward {
-    background-color: rgb(158, 244, 255)
+    background-color: rgb(158, 244, 255);
 }
 #Sandy {
-    background-color: rgb(185, 136, 84)
+    background-color: rgb(185, 136, 84);
 }
 #Krabs {
-    background-color: rgb(255, 96, 96)
+    background-color: rgb(255, 96, 96);
 }
 #Plankton {
-    background-color: rgb(106, 194, 125)
+    background-color: rgb(106, 194, 125);
 }
 #Karen {
-    background-color: rgb(136, 136, 136)
+    background-color: rgb(136, 136, 136);
 }
 #Larry {
-    background-color: rgb(109, 155, 194)
+    background-color: rgb(109, 155, 194);
 }
 #Gary {
-    background-color: rgb(198, 126, 191)
+    background-color: rgb(198, 126, 191);
 }
 @media (max-width: 1290px) {
     h1 {
         font-size: 5rem;
     }
     .container {
-        width: 100%
+        width: 100%;
         justify-content: center;
     }
     .card {
@@ -168,7 +136,7 @@ h1 {
 }
 @media (max-width: 724px){
     .container {
-        width: 100%
+        width: 100%;
     }
     .card {
         width: 80%;
