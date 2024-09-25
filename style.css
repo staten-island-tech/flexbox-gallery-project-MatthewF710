@@ -13,11 +13,50 @@ html {
 #ptrkIMG{
     transition: all 3s;
 }
+#sqwdIMG{
+    width: 64px;
+    background-image: url(images/Squidward_Tentacles.png);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+#sandIMG{
+    transition: all 1s ease;
+}
+#krabIMG{
+    transition: all 1s;
+}
+#plnkIMG{
+    transition: all 1s;
+}
+#karnIMG{
+    transition: all 2s;
+}
+#laryIMG{
+    transition: all 3s;
+}
 #spngIMG:hover{
     animation: spngIMG 1.75s infinite;
 } 
 #ptrkIMG:hover{
     transform: rotate(10turn);
+}
+#sqwdIMG:hover{
+    animation: sqwdIMG 3s infinite;
+}
+#sandIMG:hover{
+    transform: rotateX(360deg);
+}
+#krabIMG:hover{
+    filter: blur(10px);
+}
+#plnkIMG:hover{
+    transform: skew(80deg, 5deg);
+}
+#karnIMG:hover{
+    filter: grayscale(100%);
+}
+#laryIMG:hover{
+    transform: scale(3);
 }
 #garyIMG:hover{
     animation: garyIMG 1.75s infinite;
@@ -33,24 +72,42 @@ html {
         transform: scale(1.25);
     }
 }
+@keyframes sqwdIMG {
+    0%, 50%, 100%{
+        transform: rotate3d(1, 1, 1, 20deg);
+    }
+    25%, 75%{
+        transform: rotate3d(1, 1, 1, -20deg);
+    }
+    50%{
+        background-image: url(images/squidward_hover.jpg);
+        width: 130px;
+    }
+    100%{
+    }
+}
 @keyframes garyIMG {
     0%, 75%{
         background-color: rgb(88, 152, 208);
     }
     0%, 50%, 100%{
-        transform: rotate3d(1, 2, 3, 20deg);
+        transform: rotate3d(1, 1, 1, 20deg);
     }
     25%, 50%{
         background-color: rgba(255, 255, 255, 0);
     }
     25%, 75%{
-        transform: scale(2) rotate3d(1, 2, 3, -20deg);
+        transform: scale(2) rotate3d(1, 1, 1, -20deg);
     }
+}
+.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 h1 {
     color: rgb(168, 165, 125);
     font-size: 7rem;
-    text-align: center;
     text-shadow: 5px 5px 2.5px rgb(0, 0, 0);
 }
 .container{
@@ -92,31 +149,31 @@ h1 {
     text-align: center;
 }
 #Spongebob {
-        background: linear-gradient(45deg,rgb(207, 252, 151), rgb(255, 243, 96));
+    background: linear-gradient(45deg,rgb(151, 255, 23), rgb(255, 243, 96));
 }
 #Patrick {
-    background-color: rgb(249, 167, 248);
+    background: linear-gradient(45deg,rgb(101, 29, 255), rgb(249, 167, 248));
 }
 #Squidward {
-    background-color: rgb(158, 244, 255);
+    background: linear-gradient(45deg,rgb(55, 52, 255),  rgb(158, 244, 255));
 }
 #Sandy {
-    background-color: rgb(185, 136, 84);
+    background: linear-gradient(45deg,rgb(255, 208, 0),  rgb(185, 136, 84));
 }
 #Krabs {
-    background-color: rgb(255, 96, 96);
+    background: linear-gradient(45deg,rgb(142, 5, 5),  rgb(255, 96, 96));
 }
 #Plankton {
-    background-color: rgb(106, 194, 125);
+    background: linear-gradient(45deg,rgb(22, 20, 176),  rgb(106, 194, 125));
 }
 #Karen {
-    background-color: rgb(136, 136, 136);
+    background: linear-gradient(45deg,rgb(152, 255, 120),  rgb(136, 136, 136));
 }
 #Larry {
-    background-color: rgb(109, 155, 194);
+    background: linear-gradient(45deg,rgb(0, 213, 255),  rgb(109, 155, 194));
 }
 #Gary {
-    background-color: rgb(198, 126, 191);
+    background: linear-gradient(45deg,rgb(255, 52, 164), rgb(198, 126, 191));
 }
 @media (max-width: 1290px) {
     h1 {
