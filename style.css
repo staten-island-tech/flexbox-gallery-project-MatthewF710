@@ -10,6 +10,9 @@ body, html, * {
 html {
     background-image: url(images/spongebob_background.png);
 }
+title {
+    opacity: 0;
+}
 #ptrkIMG{
     transition: all 3s;
 }
