@@ -2,10 +2,7 @@ body, html, * {
     font-size: 10px;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: 'SpongeBob Font Wide', sans-serif;
+    box-sizing: border-box;
 }
 html {
     background-image: url(images/spongebob_background.png);
@@ -104,6 +101,7 @@ title {
     }
 }
 .title-container {
+    font-family: 'SpongeBob Font Wide', sans-serif;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -117,11 +115,14 @@ h1 {
     width: 85vw;
     margin: auto;
     display: flex;
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
     grid-row-gap: 2vw;
     padding: 1rem;
+    font-family: 'SpongeBob Font Wide', sans-serif;
 }
 .card{
     height: 37rem;
